@@ -44,6 +44,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    padding: 0;
 }
 
 section {
@@ -312,45 +313,16 @@ header {
 
 .section__subtitle--work {
     font-weight: var(--fw-bold);
+    font-size: 1rem;
     margin-bottom: 2em;
 }
 
-.par__image {
-    /*height: 100%;*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 0 auto;
-}
-
-.portfolio__item {
-    overflow: hidden;
-}
-
-.portfolio__img {
-    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
-    opacity: 250ms linear;
-}
-
-.portfolio__img:hover {
-    transition: scale(1.2);
-    opacity: 0.75;
-}
-
-.footer {
-    background: var(--clr-dark);
-}
-
-.section__title--blank {
-    color: var(--clr-dark);
-}
-
-.section__subtitle--blank {
-    color: var(--clr-dark);
+.section__title--work::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-light);
+    opacity: 0.5;
 }
