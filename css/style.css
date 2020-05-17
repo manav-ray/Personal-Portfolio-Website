@@ -38,8 +38,8 @@
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -223,10 +223,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-}
-
-.logo {
-    max-width: 100px;
 }
 
 .intro {
