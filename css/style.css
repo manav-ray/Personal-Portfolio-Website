@@ -313,6 +313,7 @@ header {
 
 .section__subtitle--work {
     font-weight: var(--fw-bold);
+    color: rgb(161, 150, 219);
     font-size: 1rem;
     margin-bottom: 2em;
 }
