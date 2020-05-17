@@ -30,6 +30,13 @@
     }
 }
 
+.parallax {
+    background: url('../img/testImage1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -310,6 +317,14 @@ header {
 .section__subtitle--work {
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
+}
+
+.par__image {
+    /*height: 100%;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .portfolio {
