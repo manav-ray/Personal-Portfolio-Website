@@ -51,6 +51,14 @@
     height: 500px;
 }
 
+@media (max-width: 800px) {
+    .parallax,
+    .parallax2,
+    .parallax3 {
+        display: none;
+    }
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -219,7 +227,6 @@ header {
     height: 1px;
     margin: 0.5em auto 1em;
     background-color: var(--clr-dark);
-    opacity: 0.5;
 }
 
 .services {
@@ -261,18 +268,16 @@ header {
 
 .section__title--work::after {
     content: '';
-    display: block;
     width: 3em;
     height: 1px;
     margin-bottom: 0.75em;
     background-color: var(--clr-light);
-    opacity: 0.5;
 }
 
 .polaroid {
     background-color: var(--clr-light);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: inline-block;
+    box-shadow: var(--bs);
+    display: inline-flex;
     width: 30%;
     margin: 10px;
     margin-bottom: 30px;
@@ -287,12 +292,6 @@ div.container {
     color: var(--clr-dark);
     text-align: center;
     padding: 10px 20px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 @media (max-width: 800px) {
