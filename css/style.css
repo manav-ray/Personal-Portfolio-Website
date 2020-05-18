@@ -148,6 +148,7 @@ header {
 .topnav a {
     float: left;
     color: var(--clr-dark);
+    font-weight: var(--fw-bold);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
