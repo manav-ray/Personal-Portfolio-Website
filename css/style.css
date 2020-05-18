@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-:root {
+ :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     --fw-reg: 300;
@@ -63,7 +63,7 @@ img {
     max-width: 100%;
 }
 
-:focus {
+ :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
@@ -79,7 +79,11 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 h1,
@@ -252,7 +256,33 @@ header {
     display: block;
     width: 3em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin-bottom: 0.75em;
     background-color: var(--clr-light);
     opacity: 0.5;
+}
+
+.polaroid {
+    background-color: var(--clr-light);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.polaroid_img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+div.container {
+    color: var(--clr-dark);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
