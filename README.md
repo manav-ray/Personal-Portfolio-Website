@@ -1,1 +1,1 @@
-A personal project using html and css.
+A personal project using html, css, and javascript
