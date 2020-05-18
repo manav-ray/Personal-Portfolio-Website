@@ -44,6 +44,13 @@
     height: 500px;
 }
 
+.parallax3 {
+    background: url('../img/bburg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -286,4 +293,20 @@ div.container {
     content: "";
     clear: both;
     display: table;
+}
+
+@media (max-width: 800px) {
+    .polaroid {
+        width: 30%;
+    }
+}
+
+.contact-me {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--contact {
+    color: var(--clr-accent);
 }
