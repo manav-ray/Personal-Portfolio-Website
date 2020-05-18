@@ -94,7 +94,7 @@
             </div>
 
 
-            <p class="section__subtitle section__subtitle--work">Source code for my projects (including the ones described above) is available at the following GitHub link</p>
+            <p class="section__subtitle section__subtitle--work">Source code for my projects is private due to the possiblity of honor code violations. Please contact me using the form below to request access</p>
             <a href="https://github.com/manav-ray?tab=repositories" target="_blank" class="btn">Github</a>
     </section>
 
@@ -105,9 +105,46 @@
 
     <section class="contact-me" id="contact">
         <h2 class="section__title section__title--contact"> Contact Me</h2>
+        <div class="contain">
+            <div class="wrapper">
+                <div class="contact">
 
+                    <form id="contactForm">
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label>Company</label>
+                            <input type="text" name="company" id="company" required>
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label>Phone Number (Optional)</label>
+                            <input type="text" name="phone" id="phone">
+                        </p class="full">
+                        <p>
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message" required> </textarea>
+                        </p>
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+                    </form>
+                    <div class="alert">
+                        Your message has been sent!
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
