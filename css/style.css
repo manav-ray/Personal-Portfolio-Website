@@ -297,7 +297,7 @@ div.container {
 
 @media (max-width: 800px) {
     .polaroid {
-        width: 30%;
+        width: 100%;
     }
 }
 
